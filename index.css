@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("images/Brown-background.jpeg") no-repeat center fixed;
+    background-size: cover;
+    background-color:rgb(123, 102, 83);
+}
+
+.landing h1 {
+    color:  rgb(255,191,2);
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'vonique64', serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+.landing h2 {
+    font-size: 2em;
+    font-family: 'vonique64', serif;
+    display: flex;
+    justify-content: center;
+    color: rgb(216, 205, 194);
+    padding-bottom: 15em;
+}
+
+.landing ul{
+    color: rgb(255,191,2);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-top: 10px;
+    list-style: none;
+    font-family: 'vonique64', serif;
+    font-size: 1.5em;
+
+}
+
+.nav-link a {
+    color: rgb(255,191,2);
+    text-decoration: overline;
+}
+
+.nav-link a:hover {
+    color: rgb(216, 205, 194);
+    font-family: 'vonique92', serif;
+}
+
+.personal-info h2 {
+    color:  rgb(255,191,2);
+    font-family: 'vonique64', serif;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-info p {
+    color: rgb(216, 205, 194);
+}
+
+
+@media screen and (max-width: 600px) {
+    .landing{
+        background: url("images/Brown-background.jpeg") no-repeat center fixed;
+        background-size: cover;
+    }
+}
