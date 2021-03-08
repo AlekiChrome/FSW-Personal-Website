@@ -7,19 +7,128 @@
 body {
     background: url("images/Brown-background.jpeg") no-repeat center fixed;
     background-size: cover;
-    background-color:rgb(123, 102, 83);
 }
 
-.landing h1 {
-    color:  rgb(255,191,2);
+
+li {
+    display: inline-block;
+    padding: 0 1.25rem;
+}
+
+li a {
+    color: rgb(255,191,2);
+    text-decoration: overline;
+    font-weight: bold;
+    font-family: 'vonique64', serif;
+}
+
+.nav-toggle {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.open {
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
+
+li a:hover {
+    color: rgb(216, 205, 194);
+    font-family: 'vonique92', serif;
+    display: inline;
+    text-decoration: none;
+    background-image: linear-gradient(transparent, transparent),linear-gradient(transparent, transparent),linear-gradient(to right, #30e8bf, #ff8235);
+    background-repeat: no-repeat;
+    background-position: 120%, 122%, 0 130%;
+    background-size: 100% 10px;
+}
+
+.container #ca {
+    width: 5em;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+ul {
+    padding: 0;
+}
+
+.logo-header {
+    font-family:'vonique92', serif;
+}
+
+.landing {
+    min-height: 100vh;
+    background: url("images/Brown-background.jpeg") no-repeat center fixed;
+    background-size: cover;
+    padding: 0rem 5
+}
+
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 200;
+}
+
+.splash img {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 150px;
+}
+
+.splash.disappear {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: -10;
+    transition: all 0.7s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.appear {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+
+h1 {
+    color: rgb(255,191,2);
     font-weight: bold;
     font-size: 4em;
-    font-family: 'vonique64', serif;
+    font-family: 'vonique92', serif;
     display: flex;
     justify-content: center;
     padding-top: 5em;
 }
-.landing h2 {
+h2 {
     font-size: 2em;
     font-family: 'vonique64', serif;
     display: flex;
@@ -32,12 +141,12 @@ body {
     color: rgb(255,191,2);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-around;
+    flex-wrap: wrap;
     padding-top: 10px;
     list-style: none;
     font-family: 'vonique64', serif;
-    font-size: 1.5em;
-
+    font-size: 1.3em;
 }
 
 .nav-link a {
@@ -54,15 +163,71 @@ body {
     background-repeat: no-repeat;
     background-position: 120%, 122%, 0 130%;
     background-size: 100% 10px;
-
 }
 
-.headshot img{
+/* .intro {
+    background: black;
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.slider {
+    background: linear-gradient(transparent, transparent),linear-gradient(transparent, transparent),linear-gradient(to right, #30e8bf, #ff8235);
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transform: translateY(100%);
+}
+
+.intro-text {
+    color: rgb(216, 205, 194);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.hide {
+    background:black;
+    overflow:hidden;
+}
+
+.hide span {
+    display:inline-block;
+    transform: translateY(100%);
+} */
+
+
+/* .headshot img{
     filter: sepia(100%);
-    width: 600px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.logos i {
+    font-size: 3rem;
+    grid-column-start: 2;
+
+}
+
+.fa-facebook-square:hover {
+    color: #4267b2;
+}
+
+.fa-twitter-square:hover {
+    color: #38a1f3;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
 }
 
 
@@ -77,11 +242,55 @@ body {
 .personal-info p {
     color: rgb(216, 205, 194);
 }
+*/
 
-
-@media screen and (max-width: 600px) {
+@media all and (max-width: 720px) {
     .landing{
         background: url("images/Brown-background.jpeg") no-repeat center fixed;
         background-size: cover;
     }
+
+    header {
+        background-color: rgba(255, 192, 2, 0.471);
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: 250ms height ease-in-out;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    li a {
+        color: #583723;
+        font-size: 1.4rem;
+    }
+
+    .landing ul {
+    font-size: 12px;
+    }
+
+    .landing h1 {
+    font-size: 2rem;
+    }
+
+    .landing h6 {
+    font-size: 1rem;
+    }
+
 }

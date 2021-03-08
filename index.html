@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +16,106 @@
 </head>
 <body>
 
-    <section class="landing">
-        <ul>
-            <li class="nav-link"><a href="#">About</a></li>
-            <li class="nav-link"><a href="#">Skills</a></li>
-            <li class="nav-link"><a href="#">Featured Work</a></li>
-            <li class="nav-link"><a href="#">Games</a></li>
-            <li class="nav-link"><a href="#">Resume</a></li>
-        </ul>
+    <div class="splash">
+        <img class="appear" src="images/C-geo-black.gif">
+    </div>
+
+
+    <header>
+        <div class="container">
+            <div>
+                <img id="ca" src="images/C.png">
+                <div class="nav-toggle" id="navToggle">
+                    <img id="hamburger" class="navIcon" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg" alt="hamburger menu">
+                    <img id="navClosed" class="navIcon hidden" src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg" alt="closed hamburger">
+
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Featured Work</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <section class="landing">
+            <!-- <nav>
+                <ul>
+                    <li class="nav-link"><a href="#">About</a></li>
+                    <li class="nav-link"><a href="#">Skills</a></li>
+                    <li class="nav-link"><a href="#">Featured Work</a></li>
+                    <li class="nav-link"><a href="#">Games</a></li>
+                    <li class="nav-link"><a href="#">Resume</a></li>
+            </ul>
+        </nav> -->
+
         <h1>Candice A. Agard</h1>
         <h2>Web Developer</h2>
-    </section>
+        </section>
 
-    <section class="headshot">
+
+    <!-- <section class="headshot">
         <img src="images/Candy.jpeg">
-    </section>
+
+    <div class="logos">
+        <ul class="nav-list">
+            <li>
+                <a href="https://www.facebook.com/KanakikeSoundtrack" target="_blank" class="icon-link">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+
+             <li>
+                <a href="https://twitter.com/AlekiChromeDev" target="_blank" class="icon-link">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/in/candiceagard/" target="_blank" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+    </div>  -->
+<!-- </section>
 
     <section class="personal-info">
         <h2>About Me</h2>
         <p>
             An altruistic humanitarian who loves software development and design (and gaming). I approach many things with the idea of trying to make it better for not just myself but for others. My professional background has been in information technology, web development, nonprofit organizations, art curation, and performance. With that, I’ve been able to be on the board of the ‘Black Artist Fund’ to which I’m still a member. With the pink stone foundation, I have developed fundraisers to provide opportunities to youth in my community as well as others and assisted in research for the tech incubator. I’ve auctioned art by up and coming creatives and hosted art walks in NYC’s art district. I’ve lead teams in how to start and complete hardware repairs and have assisted in client-facing training. It is with these that I combine what I’ve learned and developed to take into any new chapter that I begin. I desire to develop technology that positively affects people's day-to-day lives. With my art knowledge and constant self-study of user experiences, I want to design user interfaces that are intuitive and compliment the tech that I work on with a company or independently.
         </p>
-    </section>
+    </section>  -->
 
+    <!-- <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Web Development</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Design</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Creation</span>
+            </h1>
+        </div>
+    </div>
+
+    <div class="slider"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script> -->
 </body>
+<script src="//unpkg.com/kursor"></script>
+<script>
+    new kursor({
+        type: 1,
+        removeDefaultCursor: true,
+        color: 'rgb(216, 205, 194)'
+    })
+</script>
 </html>
