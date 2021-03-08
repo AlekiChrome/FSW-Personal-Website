@@ -75,7 +75,7 @@ Also notice that you can set **DEADLINES** for a card, which may help you manage
 
 When you are done, replace the link below with the link to your Trello board:
 
-[Replace this link with the link to your board](https://trello.com/b/tTFpk77m/fsw-personal-site-project)
+[Candy's Trello Board](https://trello.com/b/pxrcFubr/candy-71-fsw-personal-site-project)
 
 ## User Stories
 
@@ -153,7 +153,7 @@ Here are a few ideas to consider trying:
 
 <details>
   <summary>Hints for showing and hiding elements</summary>
-  
+
   **CSS based approach**
   - What CSS attribute can we use to make an element hidden?
   - Can we give an HTML element a CSS class that is styled to make itself hidden?
