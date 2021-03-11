@@ -4,10 +4,13 @@
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/C-plain-logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +36,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Featured Work</a></li>
                     <li><a href="#">Resume</a></li>
@@ -43,27 +46,148 @@
         </div>
     </header>
 
-        <section class="landing">
-            <!-- <nav>
-                <ul>
-                    <li class="nav-link"><a href="#">About</a></li>
-                    <li class="nav-link"><a href="#">Skills</a></li>
-                    <li class="nav-link"><a href="#">Featured Work</a></li>
-                    <li class="nav-link"><a href="#">Games</a></li>
-                    <li class="nav-link"><a href="#">Resume</a></li>
-            </ul>
-        </nav> -->
+        <main class="landing">
 
-        <h1>Candice A. Agard</h1>
+         <h1>Candice A. Agard</h1>
         <h2>Web Developer</h2>
+        </main>
+
+
+        <section class="about" id="about">
+            <div class="box1">
+                <img src="images/Candy.jpeg" alt="">
+            </div>
+            <div class="box2">
+                <a href="https://twitter.com/AlekiChromeDev" class="icon-link">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </div>
+            <div class="box3">
+                <a href="https://www.linkedin.com/in/candiceagard/" target="_blank" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="box4">
+                <a href="https://www.facebook.com/KanakikeSoundtrack" class="icon-link">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+            <div class="box5">
+                <a href="https://500px.com/blackbooknine" class="icon-link">
+                    <i class="fab fa-500px"></i>
+                </a>
+            </div>
+            <div class="box6">
+                <a href="https://github.com/AlekiChrome" class="icon-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="box7">
+                <a href="https://www.twitch.tv/alekichrome" class="icon-link">
+                    <i class="fab fa-twitch"></i>
+                </a>
+            </div>
+            <div class="box8">
+                <h1>Myself</h1>
+            </div>
+            <div class="box9">
+                <h2 style="color: rgba(94, 60, 27, 0.618);">About</h2>
+            </div>
+
+            <p>
+                An altruistic humanitarian who loves software development and design (and gaming). I approach many things with the idea of trying to make it better for not just myself but for others. My professional background has been in information technology, web development, nonprofit organizations, art curation, and performance. With that, I’ve been able to be on the board of the ‘Black Artist Fund’ to which I’m still a member. With the pink stone foundation, I have developed fundraisers to provide opportunities to youth in my community as well as others and assisted in research for the tech incubator. I’ve auctioned art by up and coming creatives and hosted art walks in NYC’s art district. I’ve lead teams in how to start and complete hardware repairs and have assisted in client-facing training. It is with these that I combine what I’ve learned and developed to take into any new chapter that I begin. I desire to develop technology that positively affects people's day-to-day lives. With my art knowledge and constant self-study of user experiences, I want to design user interfaces that are intuitive and compliment the tech that I work on with a company or independently.
+            </p>
         </section>
 
+        <div class="container2">
+            <div class="card">
+                <div class="skill-logos">
+                    <div class="shape">
+                        <img src="images/javascript-logo-transparent-logo-javascript-images-3.png">
+                    </div>
+                    <div class="info">
+                        <h3 class="title">JavaScript Projects</h3>
+                        <h4>Featured Work</h4>
+                        <div class="work-links">
+                            <button>LA Starbucks API</button>
+                            <button>Tic Tac Toe</button>
+                            <button class="active">another project</button>
+                        </div>
+                        <div class="more-work">
+                            <button>View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- <section class="headshot">
+
+
+
+
+    <!-- <section class="about" id="about">
+        <div class="container"></div>
+        <div class="profile-img">
+
+            <img src="images/Candy.jpeg" alt="">
+        </div>
+        <div class="about-details">
+            <div class="about-heading">
+                <h1>About</h1>
+                <h2>Myself</h2>
+            </div>
+
+                   </p>
+        </div>
+
+           <div class="social-media">
+                <ul class="nav-list">
+                    <li>
+                        <a href="https://www.facebook.com/KanakikeSoundtrack" class="icon-link">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+
+                     <li>
+                        <a href="https://twitter.com/AlekiChromeDev" class="icon-link">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/candiceagard/" class="icon-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+
+
+
+                    <li>
+                        <a href="https://500px.com/blackbooknine" class="icon-link">
+                            <i class="fab fa-500px"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                            <a href="https://github.com/AlekiChrome" class="icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitch.tv/alekichrome" class="icon-link">
+                                <i class="fab fa-twitch"></i>
+                            </a>
+                        </li>
+                </ul>
+        </div>
+
+        </div>
+        </section> -->
+    <!-- <div class="about">
         <img src="images/Candy.jpeg">
 
-    <div class="logos">
-        <ul class="nav-list">
+        <ul class="icon-list">
             <li>
                 <a href="https://www.facebook.com/KanakikeSoundtrack" target="_blank" class="icon-link">
                     <i class="fab fa-facebook-square"></i>
@@ -80,16 +204,17 @@
                 <a href="https://www.linkedin.com/in/candiceagard/" target="_blank" class="icon-link">
                     <i class="fab fa-linkedin"></i>
                 </a>
-            </li>
-    </div>  -->
-<!-- </section>
+                    </li>
+                </ul>
+        </div>
+  -->
 
-    <section class="personal-info">
-        <h2>About Me</h2>
+    <!-- <section class="personal-info">
+        <h2 id="overlap">About Me</h2>
         <p>
             An altruistic humanitarian who loves software development and design (and gaming). I approach many things with the idea of trying to make it better for not just myself but for others. My professional background has been in information technology, web development, nonprofit organizations, art curation, and performance. With that, I’ve been able to be on the board of the ‘Black Artist Fund’ to which I’m still a member. With the pink stone foundation, I have developed fundraisers to provide opportunities to youth in my community as well as others and assisted in research for the tech incubator. I’ve auctioned art by up and coming creatives and hosted art walks in NYC’s art district. I’ve lead teams in how to start and complete hardware repairs and have assisted in client-facing training. It is with these that I combine what I’ve learned and developed to take into any new chapter that I begin. I desire to develop technology that positively affects people's day-to-day lives. With my art knowledge and constant self-study of user experiences, I want to design user interfaces that are intuitive and compliment the tech that I work on with a company or independently.
         </p>
-    </section>  -->
+    </section> -->
 
     <!-- <div class="intro">
         <div class="intro-text">
@@ -104,7 +229,7 @@
             </h1>
         </div>
     </div>
-
+nav togg
     <div class="slider"></div>
 
 

@@ -137,6 +137,7 @@ h2 {
     padding-bottom: 15em;
 }
 
+
 .landing ul{
     color: rgb(255,191,2);
     display: flex;
@@ -165,57 +166,137 @@ h2 {
     background-size: 100% 10px;
 }
 
-/* .intro {
-    background: black;
-    position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+/* .about {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-.slider {
-    background: linear-gradient(transparent, transparent),linear-gradient(transparent, transparent),linear-gradient(to right, #30e8bf, #ff8235);
-    position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     transform: translateY(100%);
-}
-
-.intro-text {
-    color: rgb(216, 205, 194);
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-}
-
-.hide {
-    background:black;
-    overflow:hidden;
-}
-
-.hide span {
-    display:inline-block;
-    transform: translateY(100%);
-} */
-
-
-/* .headshot img{
+.about img {
+    width: 500px;
     filter: sepia(100%);
-    width: 800px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10%;
     display: block;
 }
 
-.logos i {
-    font-size: 3rem;
-    grid-column-start: 2;
+.about-heading {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 0;
+    margin-bottom: 6rem;
+}
 
+.about-heading h1{
+    font-size: 6rem;
+    opacity: .5;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.nav-list li:hover {
+    list-style: none;
+}
+
+section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(20, 80px);
+    grid-template-rows: repeat(10, 100px);
+}
+
+section a {
+    color:  rgb(255,191,2);
+}
+
+section p {
+    grid-row-start: 7;
+    grid-column: 3/17;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color:rgb(220, 220, 220);
+}
+
+section img {
+    border-radius: 10px;
+    filter: sepia(100%);
+    margin: 10px;
+    width: 600px;
+}
+
+.box1 {
+    grid-column: 6/13;
+}
+
+.box2 {
+    grid-column-start: 13;
+    margin-left: 5px;
+    font-size: 5rem;
+    padding-left: 50px;
+    transition: color 650ms;
+}
+
+.box3 {
+    grid-column-start: 13;
+    margin-left: 5px;
+    font-size: 5rem;
+    padding-left: 50px;
+    transition: color 650ms;
+}
+
+.box4 {
+    grid-column-start: 13;
+    margin-left: 5px;
+    font-size: 5rem;
+    padding-left: 50px;
+    transition: color 650ms;
+}
+
+.box5 {
+    grid-column-start: 13;
+    margin-left: 5px;
+    font-size: 5rem;
+    padding-left: 50px;
+    transition: color 650ms;
+}
+
+.box6 {
+    grid-column-start: 13;
+    margin-left: 5px;
+    font-size: 5rem;
+    padding-left: 50px;
+    transition: color 650ms;
+}
+
+.box7 {
+    grid-column-start: 13;
+    margin-left: 5px;
+    font-size: 5rem;
+    padding-left: 50px;
+    transition: color 650ms;
+}
+
+.box8 {
+    grid-row-start: 3;
+    grid-column: 11/12;
+    z-index: 1;
+}
+
+.box9 {
+    grid-row-start: -6;
+    grid-column: 11/13;
+    z-index: 1;
+}
+
+.social-media i {
+    font-size: 5rem;
+    padding-left: 50px;
+    transition: color 650ms;
 }
 
 .fa-facebook-square:hover {
@@ -230,19 +311,50 @@ h2 {
     color: #0077b5;
 }
 
+.fa-500px:hover {
+    color: black;
+}
 
+.fa-github:hover {
+    color: black;
+}
 
-.personal-info h2 {
-    color:  rgb(255,191,2);
-    font-family: 'vonique64', serif;
-    display: flex;
+.fa-twitch:hover {
+    color: rgb(145,71,255);
+}
+
+/* Cards */
+
+.container2 {
+    /* background: #30e8c0b4; */
+    display:  flex;
+    align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
-.personal-info p {
-    color: rgb(216, 205, 194);
+.card {
+    min-height: 80vh;
+    width: 35rem;
+    /* background: #ff8235bc; */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.8), 0px 0px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    padding: 0rem 5rem;
 }
-*/
+
+.skill-logos {
+    min-height: 35vh;
+    align-items: center;
+    justify-content: center;
+    background: #ff8235bc;
+}
+
+.skill-logos img {
+    width: 20rem;
+}
+
+
+
 
 @media all and (max-width: 720px) {
     .landing{
@@ -291,6 +403,16 @@ h2 {
 
     .landing h6 {
     font-size: 1rem;
+    }
+
+    .profile-img {
+        margin: 0 0 7rem 0;
+        flex: 1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+
     }
 
 }

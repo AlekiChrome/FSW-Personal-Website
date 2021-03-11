@@ -7,7 +7,7 @@ const hamburger = document.querySelector('#hamburger');
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         splash.classList.add('disappear')
-    }, 4000);
+    }, 3500);
 
     navToggle.addEventListener("click", () => {
         nav.classList.toggle('open');
